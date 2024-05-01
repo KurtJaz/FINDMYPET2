@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FindmyPET</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>FindmyPET</h1>
+    </header>
+    <main>
+        <section id="report">
+            <h2>Report a Lost Pet</h2>
+            <form id="reportForm">
+                <label for="petName">Pet's Name:</label>
+                <input type="text" id="petName" name="petName" required>
+                <label for="description">Description:</label>
+                <textarea id="description" name="description" rows="4" required></textarea>
+                <label for="contact">Contact Information:</label>
+                <input type="text" id="contact" name="contact" required>
+                <label for="telegramId">Telegram ID:</label>
+                <input type="text" id="telegramId" name="telegramId" required>
+                <!-- New input field for uploading a photo -->
+                <label for="petPhoto">Upload Pet's Photo:</label>
+                <input type="file" id="petPhoto" name="petPhoto" accept="image/*" required>
+                <!-- End of new input field -->
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+
+        <section id="search">
+            <h2>Search for a Lost Pet</h2>
+            <input type="text" id="searchInput" placeholder="Enter Pet's Name">
+            <button id="searchButton">Search</button>
+            <div id="searchResults"></div>
+        </section>
+    </main>
+    
+    <footer>
+        <p>Contact us at: help@FindmyPET.com</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
